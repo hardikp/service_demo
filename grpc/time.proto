@@ -1,0 +1,15 @@
+syntax = "proto3";
+package time;
+
+service Time {
+  rpc GetTime (TimeRequest) returns (TimeReply) {}
+}
+
+// Empty Request Message
+message TimeRequest {
+}
+
+// The response message containing the time
+message TimeReply {
+  string message = 1;
+}
