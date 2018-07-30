@@ -8,6 +8,16 @@ Python3 server and client examples for [gRPC](https://grpc.io/), [Thrift](https:
 * `TimeService` implents `get_time` RPC call.
 * `get_time` returns the current server time in string format.
 
+## Implementations
+
+* grpc
+* thrift
+* thriftpy
+* rpyc
+* (Upcoming) grpc streaming
+* (Upcoming) thrift streaming
+* (Upcoming) rpyc streaming
+
 ## How to use
 
 1. Create an virtualenv and install requirements.
@@ -23,4 +33,4 @@ Python3 server and client examples for [gRPC](https://grpc.io/), [Thrift](https:
 
 1. Run Client in another terminal:
     ```bash
-    python3 server.py
+    python3 client.py
