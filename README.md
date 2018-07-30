@@ -1,4 +1,6 @@
 # service_demo
+
+[![Build Status](https://travis-ci.org/hardikp/service_demo.svg?branch=master)](https://travis-ci.org/hardikp/service_demo)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/hardikp/service_demo/blob/master/LICENSE)
 
 Python3 server and client examples for [gRPC](https://grpc.io/), [Thrift](https://thrift.apache.org/docs/) and [RPyC](https://rpyc.readthedocs.io/en/latest/).
