@@ -18,5 +18,5 @@
 
 1. Run Client in another terminal:
     ```bash
-    python3 server.py
+    python3 client.py
     ```
