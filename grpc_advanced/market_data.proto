@@ -1,0 +1,35 @@
+syntax = "proto3";
+package market_data;
+
+message OHLCRequest {
+  // List of stocks
+  repeated string ticker = 3;
+
+  // Start date
+  string start_date = 1;
+
+  // End date
+  string end_date = 2;
+}
+
+message OHLCReply {
+  // OHLCRet
+  message OHLCRet {
+    // Stock price list
+    repeated double price = 1;
+  }
+
+  // List of dates
+  repeated string dates = 1;
+
+  map<string, OHLCRet> open = 2;
+  map<string, OHLCRet> high = 3;
+  map<string, OHLCRet> low = 4;
+  map<string, OHLCRet> close = 5;
+}
+
+service MarketData {
+  // Get the [Open, High, Low, Close] for the given list of stocks
+  // and start/end dates
+  rpc GetOHLC(OHLCRequest) returns (OHLCReply);
+}
